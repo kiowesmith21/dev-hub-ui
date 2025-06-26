@@ -15,10 +15,10 @@ export default function ApiCard() {
       {mockApis.map(api => (
         <div key={api.id} className="border rounded p-4 shadow w-64 bg-white">
           <h2 className="font-bold text-lg">{api.name}</h2>
-          <p className={api.status === "healthy" ? "text-green-500" : "text-red-500"}>{api.status}</p>
-          <p className="text-black">{api.qualityScore}</p>
-          <p className="text-black">{api.uptime}</p>
-          <p className="text-black">{api.lastDeployed}</p>
+          <p className={api.status === "Healthy" ? "text-green-500" : "text-red-500"}>{api.status}</p>
+          <p className="text-black"><span className="font-bold">Quality Score: </span>{api.qualityScore}</p>
+          <p className="text-black"><span className="font-bold">Uptime: </span>{api.uptime}</p>
+          <p className="text-black"><span className="font-bold">Last Deployed: </span>{api.lastDeployed}</p>
         </div>
       ))}
     </div>
