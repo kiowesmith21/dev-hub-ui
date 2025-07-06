@@ -14,6 +14,12 @@ export const mockApis = [
       { date: "Jun 04", requests: 300 },
       { date: "Jun 05", requests: 220 },
     ],
+    config: {
+    loggingEnabled: true,
+    maxRequestsPerMinute: 1000,
+    maintenanceMode: false,
+    theme: "dark"
+    }
   },
   {
     id: "super-api",
@@ -29,6 +35,12 @@ export const mockApis = [
       { date: "Jun 04", requests: 250 },
       { date: "Jun 05", requests: 190 },
     ],
+    config: {
+    loggingEnabled: false,
+    maxRequestsPerMinute: 2000,
+    maintenanceMode: false,
+    theme: "light"
+    }
   },
   {
     id: "fun-api",
@@ -44,6 +56,12 @@ export const mockApis = [
       { date: "Jun 13", requests: 390 },
       { date: "Jun 14", requests: 150 },
     ],
+    config: {
+    loggingEnabled: true,
+    maxRequestsPerMinute: 3000,
+    maintenanceMode: false,
+    theme: "dark"
+    }
   },
   {
     id: "Alright-api",
@@ -59,6 +77,12 @@ export const mockApis = [
       { date: "Jun 27", requests: 120 },
       { date: "Jun 28", requests: 210 },
     ],
+    config: {
+    loggingEnabled: true,
+    maxRequestsPerMinute: 2500,
+    maintenanceMode: false,
+    theme: "light"
+    }
   },
 ];
 
